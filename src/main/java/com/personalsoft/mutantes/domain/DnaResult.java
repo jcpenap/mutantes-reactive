@@ -10,5 +10,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class DnaResult {
     private Long id;
     private boolean isMutant;
-    private String sequence;
+	private String sequence;
+	
+	public DnaResult(boolean isMutant, String sequence) {
+		super();
+		this.isMutant = isMutant;
+		this.sequence = sequence;
+	}
 }
